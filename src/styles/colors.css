@@ -1,0 +1,13 @@
+:root{
+    --theme-btn-bg-primary : #282E37;
+    --bg-primary: #222831;
+    --text-primary: #EEEEEEE;
+    --text-secondary: #8F8F8F;
+    --text-highlited: #00777C;
+    --input-outline: #01494D;
+    --input-bg: #2B2E37;
+    --input-text-color: #CFCFCF;
+    --input-placeholder-color: #585C63;
+    --btn-bg-primary: #00777C;
+    --btn-text-color: #D9D9D9;
+}
