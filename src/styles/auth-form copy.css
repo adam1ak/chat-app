@@ -1,16 +1,9 @@
 .auth-general{
-    display: flex;
-    flex-direction: column;
     background-color: var(--bg-primary);
     max-width: 100vw;
     min-height: 100vh;
 }
 
-.auth-form {
-    width: 100%; /* or any fixed width like 400px */
-    max-width: 350px; /* optional, to limit the maximum width */
-    margin: 0 auto; /* optional, to center the form */
-}
 
 .auth-form__top-container {
     display: flex;
@@ -24,10 +17,6 @@
     width: 25%;
     max-width: 92px;
     height: auto;
-}
-
-.auth-form_header .auth-form_light-mode-btn{
-    display: none;
 }
 
 .auth-form_light-mode-btn{
@@ -48,6 +37,11 @@
 
 .auth-form_light-mode-btn:hover{
     transform: scale(1.1);
+}
+
+.auth-form__header-container{
+    display: flex;
+    justify-content: center;
 }
 
 .auth-form_header{
@@ -81,6 +75,7 @@
     font-size: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2em;
 }
 
@@ -139,6 +134,10 @@
 /* MEDIA QUERY */
 /* Small devices (portrait tablets and large phones, 600px and up)  */
 @media only screen and (width > 600px) {
+    .auth-form__form-container form button{
+        background-color: red;
+    }
+
     .auth-form_logo {
         max-width: calc(92px * 1.1);
     }
@@ -167,6 +166,10 @@
 
 /* Medium devices (landscape tablets, 768px and up)  */
 @media only screen and (width >= 768px) {
+    .auth-form__form-container form button{
+        background-color: yellow;
+    }
+
     .auth-form_logo {
         max-width: calc(92px * 1.15);
     }
@@ -193,151 +196,12 @@
     }
 }
  /* Large devices (laptops/desktops, 992px and up)  */
-@media only screen and (width >= 992px) {
-    .auth-form_header h1{
-        font-size: calc(2.5rem * 1.2);
-    }
-    
-    .auth-form_header p{
-        font-size: calc(0.875rem * 1.2);
-    }
-    
-    .auth-form__form-container form{
-        font-size: calc(1rem * 1.2);
-    }
-    
-    .auth-form__form-container form button{
-        font-size: calc(1rem * 1.2);
-    }
-
+@media only screen and (min-width: 992px) {
     .auth-form__name-container{
         display: flex;
         gap: 1em;
         flex-direction: row;
     }
-
-    .auth-general{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 2em;
-    }
-
-    .auth-form_light-mode-btn{
-        display: none;
-    }
-
-    .auth-form__top-container {
-        padding: 0;
-        height: auto;
-    }
-
-    .auth-form_logo {
-        margin: 0;
-        max-width: none;
-        width: 85%;
-        height: 85%;
-    }
-    
-    .auth-form {
-        width: auto;
-        margin: auto 0; 
-        max-width: 400px;
-        width: 100%;
-        min-height: 650px;
-    }
-
-    .auth-form__form-container form{
-        gap: 3em;
-    }
-
-    .auth-form__form-container form input{
-        padding: 1.2em;
-    }
-
-    .auth-form__form-container form input,
-    .auth-form__form-container form button,
-    .auth-form__name-container,
-    .auth-form__password-container{
-        max-width: 100%;
-    }
-
-    .auth-form_header .auth-form_light-mode-btn{
-        position: relative;
-        transform: translateY(100%);
-        left: 90%;
-        display: flex;
-    }
 }
-/*Extra large devices (large laptops and desktops, 1200px and up)*/
-@media only screen and (width >= 1200px) {
-    .auth-form_header h1{
-        font-size: calc(2.5rem * 1.3);
-    }
-    
-    .auth-form_header p{
-        font-size: calc(0.875rem * 1.3);
-    }
-    
-    .auth-form__form-container form{
-        font-size: calc(1rem * 1.3);
-    }
-    
-    .auth-form__form-container form button{
-        font-size: calc(1rem * 1.3);
-    }
-
-    .auth-form__name-container{
-        display: flex;
-        gap: 1em;
-        flex-direction: row;
-    }
-
-    .auth-general{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 2em;
-    }
-
-    .auth-form_light-mode-btn{
-        display: none;
-    }
-
-    .auth-form__top-container {
-        padding: 0;
-        height: auto;
-    }
-
-    .auth-form_logo {
-        margin: 0;
-        max-width: none;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .auth-form {
-        width: auto;
-        margin: auto 0; 
-        max-width: 550px;
-        width: 100%;
-        min-height: 650px;
-    }
-
-    .auth-form__form-container form{
-        gap: 3em;
-    }
-
-    .auth-form__form-container form input{
-        padding: 1em;
-    }
-
-    .auth-form__form-container form input,
-    .auth-form__form-container form button,
-    .auth-form__name-container,
-    .auth-form__password-container{
-        max-width: 100%;
-    }
-}
+/*Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}*/
