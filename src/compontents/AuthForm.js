@@ -125,10 +125,10 @@ function AuthForm() {
                             <img src={lightbulb} alt="lightbulb" className="auth-form_lightbulb" />
                         </button>
                         <h1>Sign {mode === 'register' ? 'Up' : 'In'}</h1>
-                        {mode && (
+                        {mode === 'register' && (
                             <p>Already have an account? <span onClick={() => setMode('login')}>Log in</span></p>
                         )}
-                        {!mode && (
+                        {mode === 'login' && (
                             <p>Don't have an account yet? <span onClick={() => setMode('register')}>Sign up</span></p>
                         )}
                     </div>
