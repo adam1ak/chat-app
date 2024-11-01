@@ -1,11 +1,20 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import AuthForm from './compontents/AuthForm';
+import Dashboard from './compontents/Dashboard';
+
 import './styles/colors.css'
 import './styles/reset.css'
 
 function App() {
   return (
     <div className="App">
-      <AuthForm />
+    <Router>
+      <Routes basename="/chat-app">
+        <Route path="/" element={<AuthForm />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
     </div>
   );
 }
