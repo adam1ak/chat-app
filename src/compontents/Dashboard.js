@@ -2,7 +2,7 @@ import '../styles/dashboard.css'
 
 function Dashboard() {
   return (
-    <div className="Dashboard">
+    <div className="dashboard">
         <h1>...</h1>
     </div>
   );

@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
     <Router>
-      <Routes basename="/chat-app">
+      <Routes>
         <Route path="/" element={<AuthForm />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
