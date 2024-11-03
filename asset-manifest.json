@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chat-app/static/css/main.22740761.css",
+    "main.css": "/chat-app/static/css/main.2943f59a.css",
     "main.js": "/chat-app/static/js/main.2eb880cc.js",
     "static/js/453.dbd08fb5.chunk.js": "/chat-app/static/js/453.dbd08fb5.chunk.js",
     "index.html": "/chat-app/index.html",
@@ -11,12 +11,12 @@
     "static/media/lightbulb.svg": "/chat-app/static/media/lightbulb.df51e620e730270569c2374695d37c01.svg",
     "static/media/lightbulb_light_mode.svg": "/chat-app/static/media/lightbulb_light_mode.2cfdcb6787342175c9317f03bad1ea19.svg",
     "static/media/passShow.svg": "/chat-app/static/media/passShow.8589854aa038677510d28cacab324e6c.svg",
-    "main.22740761.css.map": "/chat-app/static/css/main.22740761.css.map",
+    "main.2943f59a.css.map": "/chat-app/static/css/main.2943f59a.css.map",
     "main.2eb880cc.js.map": "/chat-app/static/js/main.2eb880cc.js.map",
     "453.dbd08fb5.chunk.js.map": "/chat-app/static/js/453.dbd08fb5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22740761.css",
+    "static/css/main.2943f59a.css",
     "static/js/main.2eb880cc.js"
   ]
 }
