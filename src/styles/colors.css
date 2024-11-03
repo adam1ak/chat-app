@@ -1,13 +1,53 @@
-:root{
-    --theme-btn-bg-primary : #282E37;
-    --bg-primary: #222831;
-    --text-primary: #EEEEEEE;
-    --text-secondary: #8F8F8F;
-    --text-highlited: #00777C;
-    --input-outline: #01494D;
-    --input-bg: #2B2E37;
-    --input-text-color: #CFCFCF;
+:root {
+    --bg-main-color: #222831;
+    --bg-input-color: #282E37;
+    --bg-bulb-color: #282E37;
+    --bg-btn-color: #00777C;
+    --bg-btn-decline-color: #585C63; 
+    --bulb-color: #1F242C; 
+    --outline-input-color: #01494D; 
+    --nav-active-color: #B0B3B5;
+    --nav-active-bg-color: #242932;
+    --nav-inactive-color: #80858D;
+    --active-person-list-color: #2A3039;
+    --chat-send-bg-color: #00777C;
+    --chat-answer-bg-color: #282E37;
+    --header-txt-color: #EEEEEE;
+    --suggest-txt-color: #8F8F8F;
+    --highlight-txt-color: #00777C;
+    --input-txt-color: #CFCFCF;
+    --btn-txt-color: #D9D9D9;
     --input-placeholder-color: #585C63;
-    --btn-bg-primary: #00777C;
-    --btn-text-color: #D9D9D9;
+    --person-list-name-color: #B0B3B5;
+    --person-list-answer-color: #00777C;
+    --person-list-send-color: #80858D;
+    --person-chat-name-color: #D6D6D6;
+    --chat-txt-color: #D9D9D9;
+}
+
+[data-theme="light"] {
+    --bg-main-color: #F5F5F5;
+    --bg-input-color: #E0E0E0;
+    --bg-bulb-color: #E8E8E8;
+    --bg-btn-color: #8AA9B1;
+    --bg-btn-decline-color: #BABABA;
+    --bulb-color: #B8B8B8;
+    --outline-input-color: #A4B0B5;
+    --nav-active-color: #4A4A4A;
+    --nav-active-bg-color: #D7D9DC;
+    --nav-inactive-color: #7A7A7A;
+    --active-person-list-color: #EBEBEB;
+    --chat-send-bg-color: #8AA9B1;
+    --chat-answer-bg-color: #E0E0E0;
+    --header-txt-color: #3E3E3E;
+    --suggest-txt-color: #6D6D6D;
+    --highlight-txt-color: #8AA9B1;
+    --input-txt-color: #4F4F4F;
+    --btn-txt-color: #4D4D4D;
+    --input-placeholder-color: #A5A5A5;
+    --person-list-name-color: #6D6D6D;
+    --person-list-answer-color: #8AA9B1;
+    --person-list-send-color: #A1A1A1;
+    --person-chat-name-color: #4D4D4D;
+    --chat-txt-color: #4D4D4D;
 }

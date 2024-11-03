@@ -1,7 +1,7 @@
 .auth-general{
     display: flex;
     flex-direction: column;
-    background-color: var(--bg-primary);
+    background-color: var(--bg-main-color);
     max-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--theme-btn-bg-primary);
+    background-color: var(--bg-input-color);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -59,7 +59,7 @@
 .auth-form_header h1{
     margin: 0;
     font-size: 2.5rem;
-    color: var(--text-primary);
+    color: var(--header-txt-color);
     font-weight: 600;
     letter-spacing: -1px;
 }
@@ -68,11 +68,11 @@
     margin-top: 0.25em;
     font-size: 0.875rem;
     font-weight: 400;
-    color: var(--text-secondary);
+    color: var(--suggest-txt-color);
 }
 
 .auth-form_header span{
-    color: var(--text-highlited);
+    color: var(--highlight-txt-color);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -92,8 +92,8 @@
     border-radius: 8px;
     border: none;
     outline: none;
-    background-color: var(--input-bg);
-    color: var(--input-text-color);
+    background-color: var(--bg-input-color);
+    color: var(--input-txt-color);
 }
 
 .auth-form__form-container form input::placeholder{
@@ -102,7 +102,7 @@
 }
 
 .auth-form__form-container form input:focus{
-    border: 2px solid var(--input-outline);
+    border: 2px solid var(--outline-input-color);
 }
 
 .auth-form__name-container{
@@ -129,7 +129,7 @@
 }
 
 .auth-form__form-container form button{
-    background-color: var(--text-highlited);
+    background-color: var(--bg-btn-color);
     color: var(--btn-text-color);
     font-weight: 500;
     cursor: pointer;
