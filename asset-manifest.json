@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/chat-app/static/css/main.d1d4f590.css",
-    "main.js": "/chat-app/static/js/main.7994fd6f.js",
+    "main.css": "/chat-app/static/css/main.22740761.css",
+    "main.js": "/chat-app/static/js/main.2eb880cc.js",
     "static/js/453.dbd08fb5.chunk.js": "/chat-app/static/js/453.dbd08fb5.chunk.js",
     "index.html": "/chat-app/index.html",
     "static/media/logo.svg": "/chat-app/static/media/logo.e19e60c276a985a0af8aef699200dcdd.svg",
+    "static/media/logo_light.svg": "/chat-app/static/media/logo_light.bce12a558f883d6cc16214cbe2aae0c1.svg",
     "static/media/logoMax.svg": "/chat-app/static/media/logoMax.8037d614512d2630c2914ac795c0a9ec.svg",
+    "static/media/logoMax_light.svg": "/chat-app/static/media/logoMax_light.269fe3efb67847d36b75e1acce344495.svg",
     "static/media/lightbulb.svg": "/chat-app/static/media/lightbulb.df51e620e730270569c2374695d37c01.svg",
+    "static/media/lightbulb_light_mode.svg": "/chat-app/static/media/lightbulb_light_mode.2cfdcb6787342175c9317f03bad1ea19.svg",
     "static/media/passShow.svg": "/chat-app/static/media/passShow.8589854aa038677510d28cacab324e6c.svg",
-    "main.d1d4f590.css.map": "/chat-app/static/css/main.d1d4f590.css.map",
-    "main.7994fd6f.js.map": "/chat-app/static/js/main.7994fd6f.js.map",
+    "main.22740761.css.map": "/chat-app/static/css/main.22740761.css.map",
+    "main.2eb880cc.js.map": "/chat-app/static/js/main.2eb880cc.js.map",
     "453.dbd08fb5.chunk.js.map": "/chat-app/static/js/453.dbd08fb5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1d4f590.css",
-    "static/js/main.7994fd6f.js"
+    "static/css/main.22740761.css",
+    "static/js/main.2eb880cc.js"
   ]
 }
