@@ -136,6 +136,17 @@
     font-size: 1rem;
 }
 
+/* animation */
+
+.auth-general, 
+.auth-form, 
+.auth-form_header h1, 
+.auth-form_header p, 
+.auth-form__form-container form input,
+.auth-form__form-container form button {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
 
 /* MEDIA QUERY */
 /* Small devices (portrait tablets and large phones, 600px and up)  */
