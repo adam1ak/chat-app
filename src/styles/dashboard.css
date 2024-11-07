@@ -1,13 +1,5 @@
 .dashboard{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bg-primary);
+    background-color: var(--bg-main-color);
     max-width: 100vw;
     min-height: 100vh;
-}
-
-h1{
-    color: yellow;
-    font-size: 12rem;
 }

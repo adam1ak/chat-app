@@ -146,6 +146,15 @@ function AuthForm() {
         setLastName(''); // Clear last name
     };
 
+    const showPassword = () => {
+        const passInput = document.getElementById('passwordInput');
+        if (passInput.type === 'password') {
+            passInput.type = 'text';
+        } else {
+            passInput.type = 'password';
+        }
+    }
+
     return (
         <div className="auth-general">
             <div className="auth-form__top-container">
@@ -207,7 +216,8 @@ function AuthForm() {
                                 onChange={(e) => setPassword(e.target.value)} />
                             <img src={passShow}
                                 className='password-eye'
-                                alt='password eye' />
+                                alt='password eye'
+                                onClick={showPassword} />
                         </div>
                         <button type="submit">
                             {mode === 'register' ? 'Create account' : 'Sign In'}
