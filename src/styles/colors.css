@@ -8,6 +8,7 @@
     --outline-input-color: #01494D; 
     --nav-active-color: #B0B3B5;
     --nav-active-bg-color: #242932;
+    --nav-bg-color: #1F242C;
     --nav-inactive-color: #80858D;
     --active-person-list-color: #2A3039;
     --chat-send-bg-color: #00777C;
@@ -36,6 +37,7 @@
     --nav-active-color: #4A4A4A;
     --nav-active-bg-color: #D7D9DC;
     --nav-inactive-color: #7A7A7A;
+    --nav-bg-color: #B8B8B8;
     --active-person-list-color: #EBEBEB;
     --chat-send-bg-color: #8AA9B1;
     --chat-answer-bg-color: #E0E0E0;
