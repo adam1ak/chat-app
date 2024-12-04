@@ -20,11 +20,13 @@
     --btn-txt-color: #D9D9D9;
     --input-placeholder-color: #585C63;
     --person-list-name-color: #B0B3B5;
+    --person-list-name-border: #585C63; 
     --person-list-answer-color: #00777C;
     --person-list-send-color: #80858D;
     --person-chat-name-color: #D6D6D6;
     --chat-txt-color: #D9D9D9;
 }
+
 
 [data-theme="light"] {
     --bg-main-color: #F5F5F5;

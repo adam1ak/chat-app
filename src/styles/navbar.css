@@ -1,12 +1,11 @@
 nav {
-    background-color: var(--nav-bg-color);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     width: 80px;
-    height: 100vh;
-    padding: 1em 0;
+    min-height: 100%;
+    padding-bottom: 1em;
 }
 
 .nav-wrapper {

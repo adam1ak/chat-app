@@ -1,0 +1,16 @@
+p{
+    margin: 0;
+}
+
+.all-chats-friend-card{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background-color: red;
+}
+
+.all-chats-friend-card-image{
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+}

@@ -1,4 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { getFirestore } from "firebase/firestore";
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
+
+import app from '../firebase-config.js';
+
 import '../styles/dashboard.css';
 import NavBar from './Navbar';
 
@@ -18,6 +24,21 @@ const componentsMap = {
 function Dashboard() {
   const [currentView, setCurrentView] = useState('chats');
 
+  const navigate = useNavigate();
+  const db = getFirestore(app);
+  const auth = getAuth(app);
+  
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+      } else {
+        navigate("/");
+      }
+    });
+
+    return () => unsubscribe();
+  }, [auth, navigate, db]);
+
   const handleValueChange = (newValue) => {
     console.log("New value:", newValue);  // Debugging log
     setCurrentView(newValue);
@@ -28,7 +49,10 @@ function Dashboard() {
   return (
     <div className="dashboard">
       <NavBar onValueChange={handleValueChange} />
-      {ComponentToRender ? <ComponentToRender /> : <AllChatsComponent/>}
+      <div className='dashboard-main'>
+        {ComponentToRender ? <ComponentToRender/> : <AllChatsComponent/>}        
+      </div>
+
     </div>
   );
 }

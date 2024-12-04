@@ -100,7 +100,7 @@ function AuthForm() {
                 const user = userCredential.user;
                 console.log('Registration successful!', { email, firstName, lastName });
                 const docRef = doc(db, "users", user.uid);
-                const payload = { email, firstName, fullName: (firstName + lastName).toLowerCase(), lastName, uid: user.uid };
+                const payload = { email, firstName, fullName: (firstName + lastName).toLowerCase(), lastName, uid: user.uid, pfpSrc: 'https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg' };
                 setDoc(docRef, payload);
             })
             .catch((error) => {

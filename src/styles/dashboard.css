@@ -1,7 +1,22 @@
 .dashboard{
-    background-color: var(--bg-main-color);
-    max-width: 100vw;
+    background-color: var(--nav-bg-color);
+    min-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
     display: flex;
+    padding-top: 2em;
+}
+
+.dashboard-main{
+    width: 85%;
+    background-color: var(--bg-main-color);
+    border-top-left-radius: 32px;
+    padding: 2em 0 0 2em;
+}
+
+/* Medium devices (landscape tablets, 768px and up)  */
+@media only screen and (width >= 550px) {
+    .dashboard-main{
+        width: 100%;
+    }
 }
