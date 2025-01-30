@@ -5,13 +5,23 @@ import '../styles/add-friend.css';
 function AddFriendCard(props) {
   return (
     <div className="add-friend-card">
-        <img src={props.image}
-            className='add-friend-card-image'
-            alt='user pfp'/>
+        <div className='add-friend-card-image-container'>
+            <img src={props.image}
+              className='add-friend-card-image'
+              alt='user pfp'/>
+        </div>
+
         <div className='add-friend-card-info'>
             <p>{props.firstName} {props.lastName}</p>
-            <button
-              onClick={props.handleAdd}>Add</button>
+            <div className='add-friend-card-btns'>
+              <button
+                className="accept-btn"
+                onClick={props.handleAdd}>{props.btnText}</button>
+              <button
+                className="decline-btn"
+                style={{display: props.display}}
+                onClick={props.handleDecline}>Decline</button>
+            </div>
         </div>
     </div>
   );
